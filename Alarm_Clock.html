@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alarm Clock</title>
+        <link href="./clock.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;Alarm Clock</h1>
+            <div class="clock">
+                <div id="time"></div>
+                <div id="alarmTime">
+                    <label for="alarm">Set Alarm: </label>
+                    <input type="time" id="alarm">
+                    <button onclick="setAlarm()">Set</button>
+                </div>
+                <div id="timers"></div>
+            </div>
+        </div>
+
+        <audio id="alarmSound" src="ringtone/alarm.mp3" preload="auto"></audio>
+        <script src="https://kit.fontawesome.com/36d59b489f.js" crossorigin="anonymous"></script>
+        <script src="alarm.js"></script>
+    </body>
+</html>
